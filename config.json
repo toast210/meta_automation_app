@@ -1,0 +1,32 @@
+{
+  "access_token": "YOUR_META_LONG_LIVED_ACCESS_TOKEN",
+  "graph_api_version": "v21.0",
+  "accounts": [
+    {
+      "name": "Account 1",
+      "ad_account_id": "act_REPLACE_WITH_AD_ACCOUNT_ID"
+    },
+    {
+      "name": "Account 2",
+      "ad_account_id": "act_REPLACE_WITH_AD_ACCOUNT_ID"
+    },
+    {
+      "name": "Account 3",
+      "ad_account_id": "act_REPLACE_WITH_AD_ACCOUNT_ID"
+    }
+  ],
+  "lookback_days": 7,
+  "min_spend_before_pause": 20,
+  "frequency_alert_threshold": 3.0,
+  "conversion_action_type": "purchase",
+  "budget_increase_pct": 20,
+  "budget_decrease_pct": 20,
+  "llm": {
+    "provider": "groq",
+    "groq_api_key": "YOUR_GROQ_API_KEY",
+    "groq_model": "openai/gpt-oss-120b",
+    "openrouter_api_key": "",
+    "openrouter_model": "openai/gpt-4o-mini"
+  },
+  "log_csv_path": "meta_optimizer_log.csv"
+}
